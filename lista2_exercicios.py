@@ -43,17 +43,17 @@ else:
 # 4. Faça um Programa que verifique se uma letra digitada é "F" ou "M".
 # Conforme a letra escrever: F - Feminino, M - Masculino, Sexo Inválido
 print("\n4 - Verificando sexo.")
-sexo = str(input("Informe o sexo, digite F para feminino e M para masculino: "))
-if sexo == 'F':
+sexo = input("Informe o sexo, digite F para feminino e M para masculino: ")
+if sexo in 'Ff':
     print("Feminino.\n")
-elif sexo == 'M':
+elif sexo in 'Mm':
     print("Masculino\n")
 else:
     print("Sexo inválido.\n")
 
 # 5. Faça um Programa que verifique se uma letra digitada é vogal ou consoante
 print("\n5 - Informa se é vogal ou consoante.")
-letra = str(input("Forneça uma letra qualquer: "))
+letra = input("Forneça uma letra qualquer: ")
 if letra in 'aeiouAEIOU':
     print("É uma vogal.\n")
 elif letra in 'bcdfghjklmnpqrstvwxyzçBCDFGHJKLMPQRSTVWXYZÇ':
@@ -94,11 +94,11 @@ print(f"O maior número é: {max(numero)}.\n"
 # produto você deve comprar, sabendo que a decisão é sempre pelo mais barato.
 print("\n9 - Forneça o preço de 3 produtos e o mais barato será impresso.")
 produtos = {}
-p1n = str(input("Qual a marca do primeiro produto: "))
+p1n = input("Qual a marca do primeiro produto: ")
 p1v = float(input("Qual o valor do produto {p1n}: "))
-p2n = str(input("Qual a marca do segundo produto: "))
+p2n = input("Qual a marca do segundo produto: ")
 p2v = float(input("Qual o valor do produto {p2n}: "))
-p3n = str(input("Qual a marca do terceiro produto: "))
+p3n = input("Qual a marca do terceiro produto: ")
 p3v = float(input("Qual o valor do produto {p3n}: "))
 produtos[p1n] = p1v  # Coloca os nomes e os valores como chaves do dict
 produtos[p2n] = p2v
@@ -118,8 +118,8 @@ print(sorted(numbers))
 # M-matutino ou V-Vespertino ou N- Noturno. Imprima a mensagem "Bom Dia!", "Boa Tarde!" 
 # ou "Boa Noite!" ou "Valor Inválido!"
 print("\n\n11 - Saudações de acordo com o horário em que se estuda.")
-turno = str(input("Informe em que turno você estuda, digite  M para Matutino, V para Vespertino ou"
-                  " N para Noturno: "))
+turno = input("Informe em que turno você estuda, digite  M para Matutino, V para Vespertino ou"
+                  " N para Noturno: ")
 if turno == 'M':
     print("Bom dia!\n")
 elif turno == 'V':
