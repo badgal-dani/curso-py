@@ -22,3 +22,11 @@ while True:
         break
     else:
         print("Valor incorreto.")
+
+# 2 - Faça um programa que imprima na tela apenas os números ímpares entre 1 e 50.
+n = 1
+while n <= 50:
+    if n % 2 != 0:
+        print(n, end=', ')
+    n += 1
+print("\ncabouuu\U0001F920")
