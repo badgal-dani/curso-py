@@ -4,14 +4,14 @@ import math
 
 
 def raiz_quad(a, b, c):
-    delta = b ** 2 - 4 * a * c
+    delta = math.pow(b, 2) - 4 * a * c
     if delta > 0:
         r_delta = math.sqrt(delta)
         x1 = (-b + r_delta) / (2 * a)
         x2 = (-b - r_delta) / (2 * a)
-        return f"\nA equação possui duas raízes reais diferentes:\nx' = {x1} e x'' = {x2}\n"
+        return f"A equação possui duas raízes reais diferentes:\nx' = {x1} e x'' = {x2}\n"
     elif delta == 0:
         x = -b / (2 * a)
-        return f"\nA equação possui apenas uma raiz real:\nx = {x}\n"
+        return f"A equação possui apenas uma raiz real:\nx = {x}\n"
     else:
-        return f"\nA equação não possui valores reais.\n"
+        return f"A equação não possui valores reais.\n"
