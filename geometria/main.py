@@ -1,7 +1,7 @@
 import area as a
 
 x = int(input("Digite '1' se deseja calcular a área de um círculo, "
-              "ou digite '2' se deseja calcula a área de um quadrado: "))
+              "ou digite '2' se deseja calcular a área de um quadrado: "))
 
 if x == 1:
     r = float(input("Qual o raio do círculo em cm: "))
