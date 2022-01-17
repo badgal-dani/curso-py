@@ -16,7 +16,11 @@ class Pessoa():
     
     
     def __str__(self) -> str:
-        return f"CPF: {cpf}, Nome: {self.name}, Idade: {self.age}, Cidade: {city}, Gênero: {gender}"
+        return (f"\nCPF: {cpf}\n"
+                f"Nome: {self.name}\n"
+                f"Idade: {self.age}\n"
+                f"Cidade: {city}\n"
+                f"Gênero: {gender}")
       
         
     def eat(self, food):
